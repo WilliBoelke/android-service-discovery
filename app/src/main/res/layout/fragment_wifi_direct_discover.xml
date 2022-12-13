@@ -28,6 +28,7 @@
         android:text="@string/start_sdp_two"
         app:layout_constraintBottom_toBottomOf="@+id/end_discovery_two_btn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discover_all_btn"
         app:layout_constraintTop_toTopOf="@+id/end_discovery_two_btn"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -56,7 +57,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/start_sdp_one"
+        app:layout_constraintBottom_toTopOf="@+id/start_discovery_two_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/end_discovery_one_btn" />
 
@@ -68,6 +71,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/end_sdp_two"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/discover_all_btn"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -75,6 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/end_sdp_one"
         app:layout_constraintBottom_toTopOf="@+id/end_discovery_two_btn"
         app:layout_constraintStart_toStartOf="parent" />
@@ -85,6 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/end_discovery_button"
         app:layout_constraintEnd_toEndOf="parent"
