@@ -6,4 +6,4 @@ Furtheremore there are extensions to automatically connect to searched services 
 The Libraray is located in the `servicecDiscoveryEngine` Module. 
 
 There is also a Demo-Appliccation included which uses the libraray to either just advertise and search nearby 
-services. Or establishes P2P-Connections to them. 
+services or establishes P2P-Connections to them. 
