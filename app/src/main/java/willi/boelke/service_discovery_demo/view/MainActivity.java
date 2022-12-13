@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity
         WifiDirectServiceDiscoveryEngine.getInstance().stop();
         WifiDirectServiceConnectionEngine.getInstance().stop();
         BluetoothServiceDiscoveryVOne.getInstance().stop();
-        BluetoothServiceDiscoveryVTwo.getInstance().stop();
+        //BluetoothServiceDiscoveryVTwo.getInstance().stop();
         BluetoothServiceConnectionEngine.getInstance().stop();
     }
 
@@ -139,8 +139,8 @@ public class MainActivity extends AppCompatActivity
         {
             WifiDirectServiceDiscoveryEngine.getInstance().start(this);
             WifiDirectServiceConnectionEngine.getInstance().start(this, WifiDirectServiceDiscoveryEngine.getInstance());
-            BluetoothServiceDiscoveryVTwo.getInstance().start(this);
-            BluetoothServiceConnectionEngine.getInstance().start(this, BluetoothServiceDiscoveryVTwo.getInstance());
+            BluetoothServiceDiscoveryVOne.getInstance().start(this);
+            BluetoothServiceConnectionEngine.getInstance().start(this, BluetoothServiceDiscoveryVOne.getInstance());
         }
     }
 }

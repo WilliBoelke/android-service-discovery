@@ -33,7 +33,7 @@ public class BluetoothDiscoveryViewModel extends ViewModel implements BluetoothS
     public BluetoothDiscoveryViewModel()
     {
         // Should be initialized and started in view bc of context
-        engine = BluetoothServiceDiscoveryVTwo.getInstance();
+        engine = BluetoothServiceDiscoveryVOne.getInstance();
         engine.registerDiscoverListener(this);
     }
 

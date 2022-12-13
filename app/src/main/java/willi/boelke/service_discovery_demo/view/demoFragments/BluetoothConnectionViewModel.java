@@ -59,7 +59,7 @@ public class BluetoothConnectionViewModel extends ViewModel
         //
 
         // Implementing the listener interface and setting the implementation to both
-        // Demo Clients, this will update the Livate data and thus notify the view about changes.
+        // Demo Clients, this will update the LiveData data and thus notify the view about changes.
 
         ControllerListener<BluetoothConnection, BluetoothDevice> clientListener
                 = new ControllerListener<BluetoothConnection, BluetoothDevice>()
