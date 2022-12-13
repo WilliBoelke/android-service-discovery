@@ -224,7 +224,6 @@ public class BluetoothServiceConnectionEngine
         this.context = context.getApplicationContext();
 
         //--- starting the discovery engine ---//
-        Log.e(TAG, "start: " + discoveryEngine);
         this.discoveryEngine = discoveryEngine;
         this.discoveryEngine.start(context, adapter);
         this.discoveryEngine.registerDiscoverListener(new BluetoothServiceDiscoveryListener()

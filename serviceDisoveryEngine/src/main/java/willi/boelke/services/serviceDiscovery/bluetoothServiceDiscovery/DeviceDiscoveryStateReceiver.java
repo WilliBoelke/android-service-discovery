@@ -66,11 +66,11 @@ class DeviceDiscoveryStateReceiver extends BroadcastReceiver
         String action = intent.getAction();
         if (BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action))
         {
-            Log.e(TAG, "ACTION_DISCOVERY_STARTED: Start Discovery");
+            Log.d(TAG, "ACTION_DISCOVERY_STARTED: Start Discovery");
         }
         else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action))
         {
-            Log.e(TAG, "ACTION_DISCOVERY_FINISHED: Finished Discovery");
+            Log.d(TAG, "ACTION_DISCOVERY_FINISHED: Finished Discovery");
             discoveryEngine.onDeviceDiscoveryFinished();
         }
     }

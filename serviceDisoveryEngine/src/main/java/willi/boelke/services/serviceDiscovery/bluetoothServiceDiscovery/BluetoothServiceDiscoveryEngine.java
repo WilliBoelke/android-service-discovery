@@ -257,7 +257,6 @@ public abstract class BluetoothServiceDiscoveryEngine extends ServiceDiscoveryEn
      */
     private void registerReceivers()
     {
-        Log.e(TAG, "registerReceivers: registering ");
         IntentFilter discoverDevicesIntent = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         IntentFilter actionUUID = new IntentFilter(BluetoothDevice.ACTION_UUID);
         IntentFilter bluetoothDiscoveryStateFilter = new IntentFilter();

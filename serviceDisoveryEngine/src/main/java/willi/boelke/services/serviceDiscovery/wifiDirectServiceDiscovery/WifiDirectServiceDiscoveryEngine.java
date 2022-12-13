@@ -534,7 +534,7 @@ public class WifiDirectServiceDiscoveryEngine extends ServiceDiscoveryEngine imp
 
         //--- notify listeners ? ---//
 
-        if (newService && isServiceBeingLockedFor(description))
+        if (newService && isServiceBeingLookedFor(description))
         {
             notifyOnServiceDiscovered(device, description);
         }
@@ -550,16 +550,17 @@ public class WifiDirectServiceDiscoveryEngine extends ServiceDiscoveryEngine imp
      *
      * @return true if the service is being searched for, else return false
      */
-    private boolean isServiceBeingLockedFor(ServiceDescription description)
+    private boolean isServiceBeingLookedFor(ServiceDescription description)
     {
         if (notifyAboutAllServices)
         {
+            Log.d(TAG, "isServiceBeingLookedFor: should notify about every service");
             return true;
         }
-        for (ServiceDescription serviceDescription : servicesToLookFor)
+        for (ServiceDescription serviceDescription : this.servicesToLookFor)
         {
             String searchedServiceType = serviceDescription.getServiceType();
-            Log.e(TAG, "isServiceBeingLockedFor: " + searchedServiceType + " / " + description.getServiceType());
+            Log.d(TAG, "isServiceBeingLookedFor: " + searchedServiceType + " / " + description.getServiceType());
             if (serviceDescription.equals(description))
             {
                 return true;

@@ -31,7 +31,7 @@ public class WifiDirectConnectionFragment extends Fragment
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        binding = willi.boelke.service_discovery_demo.databinding.FragmentWifiDirectConnectBinding.inflate(inflater, container, false);
+        binding = FragmentWifiDirectConnectBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
 

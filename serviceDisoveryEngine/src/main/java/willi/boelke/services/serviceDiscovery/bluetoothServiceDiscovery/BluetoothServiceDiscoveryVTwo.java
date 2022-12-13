@@ -141,7 +141,7 @@ public class BluetoothServiceDiscoveryVTwo extends BluetoothServiceDiscoveryEngi
         {
             fetchedCounter = (short) devicesToFetch.size();
         }
-        Log.e(TAG, "onDeviceDiscoveryFinished: fetched counter init " + fetchedCounter);
+        Log.d(TAG, "onDeviceDiscoveryFinished: fetched counter init " + fetchedCounter);
         ArrayList<BluetoothDevice> fetchedDevices = new ArrayList<>();
         for (BluetoothDevice device : devicesToFetch)
         {
