@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import willi.boelke.service_discovery_demo.R;
 import willi.boelke.service_discovery_demo.databinding.FragmentBluetoothDiscoverBinding;
 import willi.boelke.service_discovery_demo.view.listAdapters.ServiceListAdapter;
+import willi.boelke.services.serviceDiscovery.bluetoothServiceDiscovery.BluetoothServiceDiscoveryVOne;
 import willi.boelke.services.serviceDiscovery.bluetoothServiceDiscovery.BluetoothServiceDiscoveryVTwo;
 
 public class BluetoothDiscoveryFragment extends Fragment
@@ -93,7 +94,7 @@ public class BluetoothDiscoveryFragment extends Fragment
 
     private void onClickEventHandler(View view)
     {
-        if (!BluetoothServiceDiscoveryVTwo.getInstance().isRunning())
+        if (!BluetoothServiceDiscoveryVOne.getInstance().isRunning())
         {
             Toast.makeText(getContext(), "Missing permission or bluetooth not supported", Toast.LENGTH_LONG).show();
             return;
